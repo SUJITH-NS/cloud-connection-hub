@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - Cloud User Group (CUG)</title>
+    <meta name="description" content="Upcoming events and workshops by Cloud User Group" />
+    <meta name="author" content="CUG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M11.5 20.5L3 12"></path><path d="M12.5 20.5L21 12"></path><path d="M.5 9L7 15.5"></path><path d="M23.5 9L17 15.5"></path><path d="M9 6.5L15 .5"></path><path d="M15 6.5L9 .5"></path></svg>
+            <span>CUG</span>
+          </a>
+          
+          <div class="navbar-menu" id="navbar-menu">
+            <a href="index.html" class="navbar-link">Home</a>
+            <a href="about.html" class="navbar-link">About Us</a>
+            <a href="team.html" class="navbar-link">Our Team</a>
+            <a href="events.html" class="navbar-link active">Events</a>
+            <a href="contact.html" class="navbar-link">Contact</a>
+            <a href="#register" class="btn btn-primary">Register Now</a>
+          </div>
+          
+          <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Event Header -->
+      <header class="event-header">
+        <div class="event-header-bg"></div>
+        <div class="container">
+          <div class="event-header-content">
+            <div class="event-header-date">June 15, 2023 • 9:00 AM - 5:00 PM</div>
+            <h1>Cloud Security Summit</h1>
+            <div class="event-header-meta">
+              <div class="event-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Tech Hub Conference Center</span>
+              </div>
+              <div class="event-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>100+ Attendees</span>
+              </div>
+            </div>
+            <a href="#register" class="btn btn-primary">Register Now</a>
+            
+            <div class="event-countdown" id="countdown">
+              <div class="countdown-item">
+                <div class="countdown-number" id="countdown-days">00</div>
+                <div class="countdown-label">Days</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-number" id="countdown-hours">00</div>
+                <div class="countdown-label">Hours</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-number" id="countdown-minutes">00</div>
+                <div class="countdown-label">Minutes</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-number" id="countdown-seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Event Details -->
+      <section class="event-details-container">
+        <div class="container">
+          <div class="event-details-content">
+            <!-- Description -->
+            <div class="event-description">
+              <h2 class="section-title">About The Event</h2>
+              <p>Join us for a comprehensive one-day summit focused on cloud security best practices, featuring industry experts and hands-on workshops. The Cloud Security Summit will provide insights into the latest threats, compliance requirements, and security solutions for cloud environments.</p>
+              <p>Whether you're a security professional, cloud architect, or IT manager, this summit will equip you with the knowledge and tools to enhance your organization's cloud security posture.</p>
+            </div>
+
+            <!-- Schedule -->
+            <div class="event-schedule">
+              <h2 class="section-title">Event Schedule</h2>
+              <div class="schedule-item">
+                <div class="schedule-time">9:00 AM</div>
+                <div class="schedule-content">
+                  <h3>Registration & Networking Breakfast</h3>
+                  <p>Check-in, collect your badge, and enjoy breakfast while networking with fellow attendees.</p>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">10:00 AM</div>
+                <div class="schedule-content">
+                  <h3>Opening Keynote: The Evolving Cloud Security Landscape</h3>
+                  <div class="schedule-speaker">
+                    <div class="speaker-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg'); background-size: cover;"></div>
+                    <div class="speaker-info">
+                      <h4>Michael Chen</h4>
+                      <p>Chief Security Officer, CloudSecure Inc.</p>
+                    </div>
+                  </div>
+                  <p>An overview of the current cloud security landscape, emerging threats, and future trends.</p>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">11:30 AM</div>
+                <div class="schedule-content">
+                  <h3>Workshop: Implementing Zero Trust Architecture in Cloud Environments</h3>
+                  <div class="schedule-speaker">
+                    <div class="speaker-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg'); background-size: cover;"></div>
+                    <div class="speaker-info">
+                      <h4>Sarah Johnson</h4>
+                      <p>Principal Cloud Architect, SecureCloud Solutions</p>
+                    </div>
+                  </div>
+                  <p>A hands-on workshop on implementing zero trust principles in your cloud infrastructure.</p>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">1:00 PM</div>
+                <div class="schedule-content">
+                  <h3>Lunch & Networking</h3>
+                  <p>Enjoy lunch while networking with speakers and fellow attendees.</p>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">2:00 PM</div>
+                <div class="schedule-content">
+                  <h3>Panel Discussion: Cloud Compliance Challenges and Solutions</h3>
+                  <p>Industry experts discuss navigating the complex landscape of cloud compliance requirements.</p>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">3:30 PM</div>
+                <div class="schedule-content">
+                  <h3>Workshop: Cloud Security Automation</h3>
+                  <div class="schedule-speaker">
+                    <div class="speaker-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/75.jpg'); background-size: cover;"></div>
+                    <div class="speaker-info">
+                      <h4>David Rodriguez</h4>
+                      <p>DevSecOps Lead, TechInnovate</p>
+                    </div>
+                  </div>
+                  <p>Learn how to automate security testing and compliance monitoring in your cloud environment.</p>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">5:00 PM</div>
+                <div class="schedule-content">
+                  <h3>Closing Remarks & Networking Reception</h3>
+                  <p>Wrap up the day with closing thoughts and continue discussions over refreshments.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speakers -->
+            <div class="event-speakers">
+              <h2 class="section-title">Featured Speakers</h2>
+              <div class="speakers-grid">
+                <div class="speaker-card">
+                  <div class="speaker-card-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                  </div>
+                  <div class="speaker-card-info">
+                    <h3>Michael Chen</h3>
+                    <p>Chief Security Officer<br>CloudSecure Inc.</p>
+                    <div class="speaker-card-social">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                      </a>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="speaker-card">
+                  <div class="speaker-card-avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                  </div>
+                  <div class="speaker-card-info">
+                    <h3>Sarah Johnson</h3>
+                    <p>Principal Cloud Architect<br>SecureCloud Solutions</p>
+                    <div class="speaker-card-social">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                      </a>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="speaker-card">
+                  <div class="speaker-card-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Rodriguez">
+                  </div>
+                  <div class="speaker-card-info">
+                    <h3>David Rodriguez</h3>
+                    <p>DevSecOps Lead<br>TechInnovate</p>
+                    <div class="speaker-card-social">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                      </a>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="speaker-card">
+                  <div class="speaker-card-avatar">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Sharma">
+                  </div>
+                  <div class="speaker-card-info">
+                    <h3>Priya Sharma</h3>
+                    <p>Cloud Security Specialist<br>SecureNet</p>
+                    <div class="speaker-card-social">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                      </a>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="event-location">
+              <h2 class="section-title">Event Location</h2>
+              <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6288279083746!2d-122.12046699999999!3d37.4154908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x29cdf01a44fc687f!2sStanford%20University!5e0!3m2!1sen!2sus!4v1685000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="location-details">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div class="location-text">
+                  <h3>Tech Hub Conference Center</h3>
+                  <p>123 Innovation Drive<br>Tech City, CA 94305<br>United States</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="event-faq">
+              <h2 class="section-title">Frequently Asked Questions</h2>
+              <div class="faq-item">
+                <div class="faq-question">What's included in the registration fee?</div>
+                <div class="faq-answer">
+                  <p>Your registration includes full access to all sessions, workshops, networking events, breakfast, lunch, and refreshments throughout the day, as well as all conference materials.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">Is there a dress code for the event?</div>
+                <div class="faq-answer">
+                  <p>Business casual attire is recommended for all attendees.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">Will the sessions be recorded?</div>
+                <div class="faq-answer">
+                  <p>Yes, all sessions will be recorded and made available to registered attendees after the event.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">Is there parking available at the venue?</div>
+                <div class="faq-answer">
+                  <p>Yes, complimentary parking is available at the Tech Hub Conference Center garage.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">Can I get a refund if I can't attend?</div>
+                <div class="faq-answer">
+                  <p>Refunds are available up to 14 days before the event. After that, you can transfer your registration to a colleague.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Registration Form -->
+      <section class="register-form-section" id="register">
+        <div class="container">
+          <div class="register-form-container">
+            <h2 class="section-title center-title">Register for the Event</h2>
+            <form id="register-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company/Organization</label>
+                <input type="text" id="company" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="sessions">Select Sessions (Optional)</label>
+                <select id="sessions" class="form-control" multiple>
+                  <option value="all">All Sessions</option>
+                  <option value="keynote">Opening Keynote</option>
+                  <option value="zero-trust">Zero Trust Workshop</option>
+                  <option value="compliance">Compliance Panel</option>
+                  <option value="automation">Security Automation Workshop</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="dietary">Dietary Restrictions (Optional)</label>
+                <input type="text" id="dietary" class="form-control">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Register Now</button>
+              </div>
+            </form>
+            <div id="form-message" class="form-message"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-about">
+              <a href="index.html" class="footer-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M11.5 20.5L3 12"></path><path d="M12.5 20.5L21 12"></path><path d="M.5 9L7 15.5"></path><path d="M23.5 9L17 15.5"></path><path d="M9 6.5L15 .5"></path><path d="M15 6.5L9 .5"></path></svg>
+                <span>CUG</span>
+              </a>
+              <p>Connecting cloud enthusiasts and professionals to share knowledge, experience, and build a community.</p>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-links">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Events Archive</a></li>
+                <li><a href="#">Community Forum</a></li>
+                <li><a href="#">Cloud Resources</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-contact">
+              <h3>Contact</h3>
+              <ul>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>123 Cloud Avenue, Tech City, 10001</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <a href="mailto:info@cugclub.com">info@cugclub.com</a>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <hr>
+          
+          <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Cloud User Group (CUG). All Rights Reserved.</p>
+            <div class="footer-legal">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./src/script.js"></script>
+    <script src="./src/event-script.js"></script>
+  </body>
+</html>
